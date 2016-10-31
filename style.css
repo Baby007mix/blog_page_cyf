@@ -3,33 +3,35 @@
 
 /*this is the main container of the content it is styled using percentages so easily adjusted*/
 body{
-	margin:auto;
+	margin: auto;
 	width: 80%;
 	clear: both;
 	text-align: left;
 	font-family: "Scope One", "serif";
-	color:black;
-	font-size:90%;/*base font size is 14px* so this percentage is useful instead of using several different sizes*/
+	color: black;
+	font-size: 90%;/*base font size is 14px* so this percentage is useful instead of using several different sizes*/
 	line-height: 1.5;
 }
+
 /*used for the heading*/
-h1{ 
-	font-family:"Alex Brush","serif" ;
+h1{
+	font-family: "Alex Brush", "serif" ;
 	font-size: 75px;
 	z-index: 2;
 	background-color: rgba(174, 196, 207, 0.2);
-	color:#852f0d;
+	color: #852f0d;
 	border-radius: 5px 5px 0 0;
-	text-align: center; 
+	text-align: center;
 	line-height: 1.1;
 	padding-top: 3px;
 	margin-bottom: 0px;
 	margin-top: 5px;
 }
+
 /*used for the sub-heading*/
 h3{
 	font-family: "Alex Brush", "serif";
-	font-size:180%;
+	font-size: 180%;
 	background-color: rgba(174, 196, 207, 0.2);
 	color: gray;
 	border-radius: 0 0 5px 5px;
@@ -38,6 +40,7 @@ h3{
 	margin-bottom: 15px;
 	letter-spacing: 1px;
 }
+
 /*used for the section heading*/
 h2{
 	font-family:"Heebo", "serif";
@@ -50,6 +53,7 @@ h2{
 	margin-top: 6px;
 	margin-bottom:2px;
 }
+
 /*used for the article title heading*/
 h4{
 	font-family: "Heebo", "serif";
@@ -84,62 +88,62 @@ a:hover, a:active{
 
 /*This is for the drop down menu for recipes*/
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: #AEC6CF;
-    border-radius: 5px;
-	-moz-border-radius:5px; 
+li a:hover, .drop-down:hover .drop-btn {
+	background-color: #AEC6CF;
+	border-radius: 5px;
+	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 }
 
-li.dropdown {
-    display: inline-block;
+li.drop-down {
+	display: inline-block;
 }
 
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+.drop-down-content{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 10px 25px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+.drop-down-content a {
+	color: black;
+	padding: 10px 25px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
 }
 
-.dropdown-content a:hover{
+.drop-down-content a:hover{
 	background-color: #f1f1f1
 }
 
-.dropdown:hover .dropdown-content{
-    display:inline;
-    background-color: rgba(174,198,207,0.58);
+.drop-down:hover .drop-down-content{
+	display:inline;
+	background-color: rgba(174,198,207,0.58);
 }
 /*ends here*/
 
 /*this is the navigation bar at the top of the page*/
-.mainheader nav{
+.main-header nav{
 	background-color: rgb(232, 140, 186);
 	height: 40px;
 	border-radius: 5px;
-	-moz-border-radius:5px; /*?? not sure if I need this!! but this allows firefox browser to render the pages instructions correctly*/
-	-webkit-border-radius:5px;/*?? not sure if I need this!! but this allows web browsers like safari/opera/chrome? which are based on webkit to render the pages correctly*/
+	-moz-border-radius:5px; /* allows firefox/mozilla browser to render the pages correctly*/
+	-webkit-border-radius:5px;/*allows web browsers like safari/opera/chrome to render the pages correctly*/
 }
 
-.mainheader nav ul{
+.main-header nav ul{
 	list-style: none;
 	margin: auto;
 }
 
-.mainheader nav ul li{
+.main-header nav ul li{
 	float: left;
 	display: inline;
 }
-.mainheader nav a:link, .mainheader nav:visited{
+.main-header nav a:link, .main-header nav:visited{
 	display: inline-block;
 	padding: 10px 27px;
 	height:20px;
@@ -147,24 +151,24 @@ li.dropdown {
 /*ends here*/
 
 /*to see color when you move mouse over the tab*/
-.mainheader nav a:hover, .mainheader nav a.active,
-.mainheader nav .active a:link, .mainheader nav .active a:visited{
+.main-header nav a:hover, .main-header nav a.active,
+.main-header nav .active a:link, .main-header nav .active a:visited{
 	background-color: #cfaecf;
 	text-shadow: none;
 }
 
-.mainheader nav ul li a{
+.main-header nav ul li a{
 	border-radius: 5px;
-	-moz-border-radius:5px; 
-	-webkit-border-radius:5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 
 /*this contains all content on the page except the header and the footer*/
-.maincontent{
+.main-content{
 	line-height: 25px;
 	border-radius: 5px;
-	-moz-border-radius:5px; 
-	-webkit-border-radius:5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 
 .content{
@@ -176,145 +180,142 @@ li.dropdown {
 
 /*every other paragraph is a ddifferent color (used purple)*/
 content>p:nth-child(even){
-	color: rgba(115, 0, 128, 0.66); 
+	color: rgba(115, 0, 128, 0.66);
 }
 /*ends here*/
 
 /*capitalize the first letter of every paragraph*/
 content>p::first-letter{
 	font-size: 200%;
-    color: #8A2BE2;
+	color: #8A2BE2;
 }
 /*ends here*/
 
 /*Read More*/
 input.read-more-state {
-  	display: none;
+	display: none;
 }
 
 p.read-more-target {
-  	font-size: 0;
- 	max-height: 0;
-  	opacity: 0;
-  	transition: .20s ease;
+	font-size: 0;
+	max-height: 0;
+	opacity: 0;
+	transition: .20s ease;
 }
 
 input.read-more-state:checked ~ content.read-more-wrap p.read-more-target {
-  	font-size: inherit;
-  	max-height: 999em;
-  	opacity: 1;
+	font-size: inherit;
+	max-height: 999em;
+	opacity: 1;
 }
 
 input.read-more-state ~ label.read-more-trigger:before {
-  content: "Read more";
-  color: #8A2BE2;
+	content: "Read more";
+	color: #8A2BE2;
 }
 
 input.read-more-state:checked ~ label.read-more-trigger:before {
-  content: "read less";
-  color: #8A2BE2;
+	content: "read less";
+	color: #8A2BE2;
 }
 
 label.read-more-trigger {
-  cursor: pointer;
-  display: inline-block;
+	cursor: pointer;
+	display: inline-block;
 }
 /*ends here*/
 
 .section{
 	background-color: rgba(94, 64, 224, 0.06);
 	border-radius: 5px;
-	-moz-border-radius:5px; 
+	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	padding: 1% 1%;
 	margin-top:8% ;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.topcontent,.middlecontent,.bottomcontent{
+.top-content,.middle-content,.bottom-content{
 	background-color: #eff3f6;
 	border-radius: 5px;
-	-moz-border-radius:5px; 
+	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	padding: 3% 5%;
-	margin-top:3% ;	
+	margin-top:3% ;
 }
 
-.postinfo{
+.post-info{
 	font-style: italic;
-	color:black;
-	font-size:90%;
+	color: black;
+	font-size: 90%;
 }
 
-.aboutsidebar,.middlesidebar,.bottomsidebar {
+.about-sidebar,.middle-sidebar,.bottom-sidebar {
 	width: 21%;
 	float: left;
-	padding:2% 3%;
+	padding: 2% 3%;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	border-radius: 5px;
-	-moz-border-radius:5px; 
+	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 }
 
-.aboutsidebar{
+.about-sidebar{
 	background-color: #AEC6CF;/*pastel blue*/
 	margin: 5.2% 0 2% 3%;
 }
-.middlesidebar{
+.middle-sidebar{
 	background-color: #cfaecf; /*medium purple*/
 	margin: 2% 0 2% 3%;
 }
 
-.bottomsidebar{
+.bottom-sidebar{
 	background-color: rgb(232, 140, 186);/*cool deep pink*/
 	margin: 2% 0 2% 3%;
 }
 
-article>.h2sidebar{
+.about-sidebar h2, .middle-sidebar h2, .bottom-sidebar h2{
 	font-family: "Heebo", "serif";
 	font-weight: 300;
 	font-size: 25px;
-	color:#510551;
+	color: #510551;
 }
 
 img.imgsidebar{
 	width: 60%;
-	margin: 10px;
-	padding-left: 20%;
-	padding-right: 20%;
+	margin: auto;
+	padding: 2% 20% 2% 20%;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
-.mainfooter{
-	width:100%;
+.main-footer{
+	width: 100%;
 	height: 38px;
 	float: left;
 	border-radius: 5px;
-	-moz-border-radius:5px; 
-	-webkit-border-radius:5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 	background-color: rgba(232,140,186,1);
-	margin:2% 0 2% 0; 
+	margin: 2% 0 2% 0;
 }
 
-.mainfooter p{
+.main-footer p{
 	text-align: center;
-	font-size:80%;
-	width: 92%;
-	margin:10px;
+	font-size: 80%;
+	width: 100%;
+	margin: 10px;
 }
-
 
 /*MEDIA*/
-
-@media only screen and (min-width: 150px) 
-and (max-width:600px){
+@media only screen and (min-width: 150px)
+and (max-width: 600px){
 
 body{
 	width: 90%;
-	font-size:95%;
+	font-size: 94%;
 }
 
-h1{ 
+h1{
 	font-family:"Alex Brush", "serif";
 	font-size: 60px;
 	line-height: 0.9;
@@ -328,7 +329,7 @@ h2{
 }
 
 h3{
-	font-family:"Heebo", "serif";
+	font-family: "Heebo", "serif";
 	font-weight: 300;
 	font-size:95%;
 }
@@ -337,32 +338,32 @@ h4{
 	font-size: 20px;
 }
 
-.mainheader nav{
+.main-header nav{
 	height: 160px;
 }
 
-.mainheader nav ul{
+.main-header nav ul{
 	padding-left: 0;
 	width: 100%;
 }
 
-.mainheader nav ul li{
+.main-header nav ul li{
 	width: 100%;
 	text-align: center;
 }
 
-.mainheader nav a:link, .mainheader nav:visited{
+.main-header nav a:link, .main-header nav:visited{
 	padding: 10px 25px;
-	height:20px;
+	height: 20px;
 	display: block;
 }
 
-.dropdown-content{
-    display: none;
-    position: relative;
-    background-color: #f9f9f9;
-    min-width: 240px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+.drop-down-content{
+	display: none;
+	position: relative;
+	background-color: #f9f9f9;
+	min-width: 240px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 .content{
@@ -371,21 +372,30 @@ h4{
 	margin-top:2%;
 }
 
-.aboutsidebar, .middlesidebar, .bottomsidebar{
-	width: 94%;
+.middle-sidebar, .bottom-sidebar{
+	text-align: center;
+	width: 89%;
 	margin: 2% 0 2% 0%;
-	padding:2% 3%;
+	padding: 6% 6%;
+}
+.about-sidebar{
+	text-align: center;
+	width: 89%;
+	margin: 5% 0 2% 0%;
+	padding: 6% 6%;
 }
 
 img.imgsidebar{
-	width:60%;
-	padding-left: 18%;
-	padding-right: 18%;
-	margin: 5px;
+	width: 60%;
+	margin-left: 9%;
+	margin-right: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+	box-shadow: 0px 8px 14px 0px rgba(0,0,0,0.2);
 }
 
-.mainfooter p{
-	width: 92%;
+.main-footer p{
+	width: 100%;
 	font-size: 70%;
 	text-align: center;
 }
